@@ -31,8 +31,6 @@
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <script src="./index.js"></script>
 
-  
-
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -210,10 +208,6 @@
                       anchor: new google.maps.Point(17, 34),
                       scaledSize: new google.maps.Size(25, 25),
                     };
-
-                    google.maps.event.addListener(map, 'click', function(event) {
-                      placeMarker(map, event.latLng);
-                    });
                     // Create a marker for each place.
                     markers.push(
                       new google.maps.Marker({
@@ -223,7 +217,6 @@
                         position: place.geometry.location,
                       })
                     );
-
 
                     if (place.geometry.viewport) {
                       // Only geocodes have viewport.
