@@ -16,7 +16,11 @@ ul {
   list-style-position: inside;
 }
 
-h2, p {
+li {
+  font-size: 22px;
+}
+
+h1, p {
   text-align: center;
 }
 
